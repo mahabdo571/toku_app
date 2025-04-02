@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:toku_app/components/number_item.dart';
 import 'package:toku_app/models/number.dart';
 
-class NumbersPage extends StatelessWidget {
-  const NumbersPage({super.key});
+class FamilyMemberPage extends StatelessWidget {
+  const FamilyMemberPage({super.key});
   final List<Number> numbers = const [
     Number(
       image: 'assets/images/numbers/number_one.png',
@@ -36,16 +36,15 @@ class NumbersPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xff46322b),
-        title: const Text('Numbers', style: TextStyle(color: Colors.white)),
+        title: const Text(
+          'Family Member',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: ListView.builder(
         itemCount: numbers.length,
-        itemBuilder: (ctx,index){
-         return NumberItem(
-          color: Color(0xffef9235),
-          number: numbers[index]
-          );
-        
+        itemBuilder: (ctx, index) {
+          return NumberItem(color: Color(0xff558B37), number: numbers[index]);
         },
       ),
     );

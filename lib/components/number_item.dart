@@ -3,14 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:toku_app/models/number.dart';
 
 class NumberItem extends StatelessWidget {
-  const NumberItem({super.key, required this.number});
+  const NumberItem({super.key,required this.color, required this.number});
   final Number number;
+  final Color color ;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      color: Color(0xffef9235),
+      color:color,
       child: Row(
         children: [
           Container(color: Color(0xfffff6dc), child: Image.asset(number.image)),
