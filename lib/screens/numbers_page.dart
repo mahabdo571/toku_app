@@ -17,11 +17,11 @@ class NumbersPage extends StatelessWidget {
         backgroundColor: Color(0xff46322b),
         title: const Text('Numbers', style: TextStyle(color: Colors.white)),
       ),
-      body: Column(
+      body: ListView(
         children: [
           NumberItem(number: one),
           NumberItem(number: one),
-          NumberItem(number: one),
+        
         ],
       ),
     );
