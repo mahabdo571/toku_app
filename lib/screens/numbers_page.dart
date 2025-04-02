@@ -34,13 +34,12 @@ class NumbersPage extends StatelessWidget {
         backgroundColor: Color(0xff46322b),
         title: const Text('Numbers', style: TextStyle(color: Colors.white)),
       ),
-      body: ListView(
-        children: [
-          NumberItem(number: numbers[0]),
-          NumberItem(number: numbers[1]),
-          NumberItem(number: numbers[2]),
-          NumberItem(number: numbers[3]),
-        ],
+      body: ListView.builder(
+        itemCount: numbers.length,
+        itemBuilder: (ctx,index){
+         return NumberItem(number: numbers[index]);
+        
+        },
       ),
     );
   }
