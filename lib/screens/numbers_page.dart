@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 
 class NumbersPage extends StatelessWidget {
   const NumbersPage({super.key});
+  final Number one =const Number(
+    image: 'assets/images/numbers/number_one.png',
+    jpName: 'ichi',
+    enName: 'one',
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -45,4 +50,12 @@ class NumbersPage extends StatelessWidget {
       ),
     );
   }
+}
+
+class Number{
+ final String image;
+ final String jpName;
+ final String enName;
+
+ const Number({required this.image, required this.jpName, required this.enName});
 }
