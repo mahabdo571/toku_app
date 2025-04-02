@@ -4,11 +4,28 @@ import 'package:toku_app/models/number.dart';
 
 class NumbersPage extends StatelessWidget {
   const NumbersPage({super.key});
-  final Number one = const Number(
-    image: 'assets/images/numbers/number_one.png',
-    jpName: 'ichi',
-    enName: 'one',
-  );
+  final List<Number> numbers = const [
+    Number(
+      image: 'assets/images/numbers/number_one.png',
+      jpName: 'ichi',
+      enName: 'one',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_two.png',
+      jpName: 'Ni',
+      enName: 'tow',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_three.png',
+      jpName: 'san',
+      enName: 'three',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_four.png',
+      jpName: 'shi',
+      enName: 'four',
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +36,10 @@ class NumbersPage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          NumberItem(number: one),
-          NumberItem(number: one),
-        
+          NumberItem(number: numbers[0]),
+          NumberItem(number: numbers[1]),
+          NumberItem(number: numbers[2]),
+          NumberItem(number: numbers[3]),
         ],
       ),
     );
