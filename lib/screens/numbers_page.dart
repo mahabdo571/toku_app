@@ -9,21 +9,25 @@ class NumbersPage extends StatelessWidget {
       image: 'assets/images/numbers/number_one.png',
       jpName: 'ichi',
       enName: 'one',
+      soundPath: 'sounds/numbers/number_one_sound.mp3',
     ),
     Number(
       image: 'assets/images/numbers/number_two.png',
       jpName: 'Ni',
       enName: 'tow',
+      soundPath: 'sounds/numbers/number_two_sound.mp3',
     ),
     Number(
       image: 'assets/images/numbers/number_three.png',
       jpName: 'san',
       enName: 'three',
+      soundPath: 'sounds/numbers/number_three_sound.mp3',
     ),
     Number(
       image: 'assets/images/numbers/number_four.png',
       jpName: 'shi',
       enName: 'four',
+      soundPath: 'sounds/numbers/number_four_sound.mp3',
     ),
   ];
 
