@@ -1,29 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:toku_app/components/number_item.dart';
-import 'package:toku_app/models/number.dart';
+import 'package:toku_app/models/item_model.dart';
 
 class FamilyMemberPage extends StatelessWidget {
   const FamilyMemberPage({super.key});
-  final List<Number> numbers = const [
-    Number(
+  final List<ItemModel> numbers = const [
+    ItemModel(
       image: 'assets/images/numbers/number_one.png',
       jpName: 'ichi',
       enName: 'one',
       soundPath: 'sounds/numbers/number_one_sound.mp3',
     ),
-    Number(
+    ItemModel(
       image: 'assets/images/numbers/number_two.png',
       jpName: 'Ni',
       enName: 'tow',
       soundPath: 'sounds/numbers/number_two_sound.mp3',
     ),
-    Number(
+    ItemModel(
       image: 'assets/images/numbers/number_three.png',
       jpName: 'san',
       enName: 'three',
       soundPath: 'sounds/numbers/number_three_sound.mp3',
     ),
-    Number(
+    ItemModel(
       image: 'assets/images/numbers/number_four.png',
       jpName: 'shi',
       enName: 'four',
