@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toku_app/components/category_item.dart';
+import 'package:toku_app/screens/colors_page.dart';
 import 'package:toku_app/screens/fqmily_members.dart';
 import 'package:toku_app/screens/numbers_page.dart';
 
@@ -47,7 +48,14 @@ class HomePage extends StatelessWidget {
             text: 'Colors',
             color: Color(0xff79359f),
             onTap: () {
-              print('nusmmdm');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (ctx) {
+                    return ColorsPage();
+                  },
+                ),
+              );
             },
           ),
           Category(
