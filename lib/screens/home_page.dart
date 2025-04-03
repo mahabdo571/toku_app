@@ -3,6 +3,7 @@ import 'package:toku_app/components/category_item.dart';
 import 'package:toku_app/screens/colors_page.dart';
 import 'package:toku_app/screens/fqmily_members.dart';
 import 'package:toku_app/screens/numbers_page.dart';
+import 'package:toku_app/screens/phrases_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -62,7 +63,14 @@ class HomePage extends StatelessWidget {
             text: 'Phrases',
             color: Color(0xff50adc7),
             onTap: () {
-              print('nurmdmm');
+                  Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (ctx) {
+                    return PhrasesPage();
+                  },
+                ),
+              );
             },
           ),
         ],
